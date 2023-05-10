@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+    <style>
+      body {
+        background-color: aqua;
+      }
+      div {
+        background-color: aliceblue;
+        height: 300px;
+        width: 500px;
+        margin: auto;
+      }
+      form {
+        margin: 10px 5px;
+        padding: 5px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Guess the number</h1>
+      <p>Please enter a high number and a low number (ex. 1 to 100)</p>
+      <form name="guessForm" onsubmit="submitData(); return false">
+        Please enter your low number :
+        <input type="text" name="min" />
+        <br /><br />
+        Please enter your high number :
+        <input type="text" name="max" />
+        <br /><br />
+        <button type="submit">Play Game</button>
+      </form>
+    </div>
+    <br /><br />
+    <div id="output" style="margin: auto, padding: auto"></div>
+    <script src="guessing.js"></script>
+  </body>
+</html>
